@@ -1,0 +1,530 @@
+body{
+    background: radial-gradient(circle, #fff, #bbb);
+}
+h2{
+    color: red;
+}
+.separador{
+    color: green;
+    margin: 4px;
+}
+
+/* ******************** */
+/* PROPIEDADES DE TEXTO */
+/* ******************** */
+.Texto{
+    font-size: 25px;
+}
+.Texto__1{
+    font-size: 2em;
+}
+.Texto__2{
+    font-family: cursive;
+}
+.Texto__3{
+    font-family: 'Pacifico', cursive;
+}
+.Texto__4{
+    font-weight: 100;
+}
+
+/* ***** */
+/* CAJAS */
+/* ***** */
+.Cajas__3{
+    background-color: darkorange;
+}
+.Cajas__4{
+    background-color: darkorange;
+}
+.Cajas__1{
+    background-color: cornflowerblue;
+    display: inline;
+}
+.Cajas__2{
+    background-color: cornflowerblue;
+    display: block;
+}
+
+/* ******************** */
+/* PROPIEDADES DE CAJAS */
+/* ******************** */
+.PropiedadesCajas__1{
+    background-color: blue;
+}
+.PropiedadesCajas__2{
+    background-color: green;
+    display: inline-block;
+}
+.PropiedadesCajas__3{
+    background-color: blueviolet;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 30px;
+}
+.PropiedadesCajas__4{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 20px;
+}
+.PropiedadesCajas__5{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 15px 40px;
+}
+.PropiedadesCajas__6{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 15px 40px 55px 5px;
+}
+.PropiedadesCajas__7{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 10px 50px;
+    width: 400px;
+    height: 200px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.PropiedadesCajas__8{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 10px 50px;
+    width: 400px;
+    height: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 40px 80px 10px 29px;
+}
+.PropiedadesCajas__9{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 10px 50px;
+    width: 400px;
+    height: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+}
+.PropiedadesCajas__10{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 20px 10px 29px;
+    border-radius: 30px;
+}
+.PropiedadesCajas__11{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 70px 200px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 20px 10px 90px;
+    border-radius: 50%;
+}
+.PropiedadesCajas__12{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 70px 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 20px 10px 90px;
+    border-radius: 50%;
+    border: 8px solid blue;
+}
+.PropiedadesCajas__13{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 70px 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 20px 10px 90px;
+    border-radius: 50%;
+    border: 8px inset grey;
+}
+.PropiedadesCajas__14{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 70px 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 20px 10px 90px;
+    border-radius: 50%;
+    border: 8px dashed grey;
+}
+.PropiedadesCajas__15{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 20px 20px 90px;
+    border-radius: 20%;
+    border: 2px dashed grey;
+    box-shadow: 4px 6px 15px 0 #000;
+}
+.PropiedadesCajas__16{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 20px 20px 90px;
+    border-radius: 20%;
+    border: 2px dashed grey;
+    box-shadow: 30px 10px 40px 10px #000;
+}
+.PropiedadesCajas__17{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 20px 20px 900px;
+    border-radius: 20%;
+    border: 2px dashed grey;
+    box-shadow: 20px 60px 110px 6px #000;
+}
+.PropiedadesCajas__18{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 20px 20px 20px;
+    border-radius: 20%;
+    border: 2px dashed grey;
+    text-shadow: 2px 2px 7px #fff,2px 2px 7px #fff;
+}
+.PropiedadesCajas__19{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 20px 20px 900px;
+    border-radius: 20%;
+    border: 2px dashed grey;
+    box-shadow: 20px 60px 110px 6px #000;
+    transform: rotate(45deg);
+}
+.PropiedadesCajas__20{
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 40px 40px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    outline: 10px solid #000;
+}
+
+
+/* ********* */
+/* POSITION */
+/* ********* */
+.relative{
+    padding: 100px 80px;
+    margin: 20px 20px 20px 30px;
+    background-color: red;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.relative__1{
+    width: 120px;
+    height: 120px;
+    padding: 45px;
+    background-color: orange;
+    margin: auto;
+}
+.relative__2{
+    width: 120px;
+    height: 120px;
+    padding: 45px 45px 30px 20px;
+    background-color: green;
+    position: relative;
+    top: 20px;
+    left: -80px;
+    margin: auto;
+}
+.relative__3{
+    width: 120px;
+    height: 120px;
+    padding: 45px;
+    background-color: lightblue;
+    margin: auto;
+}
+.relative p{
+    position: relative;
+    bottom: 80px;
+    right: 60px;
+}
+.Zindex{
+    padding: 10px 190px 130px 140px;
+    margin: 20px 20px 20px 30px;
+    background-color: red;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: auto;
+}
+.Zindex__1{
+    width: 120px;
+    text-align: center;
+    height: 120px;
+    padding: 60px 60px;
+    background-color: green;
+    position: relative;
+    bottom: -50px;
+    right: -30px;
+    z-index: 10;
+    margin: auto;
+}
+.Zindex__2{
+    width: 120px;
+    height: 120px;
+    padding: 60px 60px;
+    background-color: lightblue;
+    position: relative;
+    margin: auto;
+}
+.Zindex__3{
+    width: 120px;
+    text-align: center;
+    height: 120px;
+    padding: 60px 60px;
+    background-color: green;
+    position: relative;
+    top: 70px;
+    left: 30px;
+    z-index: 0;
+    margin: auto;
+}
+.Zindex__4{
+    width: 120px;
+    height: 120px;
+    padding: 60px 60px;
+    background-color: lightblue;
+    position: relative;
+    top: 30px;
+    z-index: 10;
+}
+.Zindex__Padre{
+    display: inline-block;
+    background: red;
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+    text-align: center;
+    padding: 10px;
+}
+.Zindex__Padre b {
+    background:  lightblue;
+    position: relative;
+    top: -50px;
+
+} 
+.Zindex__Hijo{
+    background: orange;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: -60px;
+    left: -40px;
+    z-index: -1;
+}
+.absolute{
+    background: red;
+    width: 300px;
+    height: 500px;
+    margin: 40px;
+    padding: 30px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.absolute__1{
+    background: orange;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: center;
+}
+.absolute__2{
+    background: green;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: center;
+    position: absolute;
+    opacity: .5;
+
+}
+.absolute__3{
+    background: lightblue;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: center; 
+}
+.absolute2{
+    margin: 30px;
+}
+.absolute2__1{
+    background: lightseagreen;
+    margin: 10px;
+}
+.absolute2__2{
+    background: lightseagreen;
+    margin: 10px;
+    position: absolute;
+}
+.PracticaAbsoulute{
+    background: rgb(131, 81, 48);
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: 20px 430px;
+    border: 4px solid ;
+    padding: 20px;
+
+    position: relative;
+}
+.PracticaAbsoulute__1{
+    background: rgb(184, 184, 62);
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    position: absolute;
+    top: 20;
+}
+.PracticaAbsoulute__2{
+    background: rgb(184, 184, 62);
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    position: absolute;
+    left: 290px;
+}
+.PracticaAbsoulute__3{
+    background: rgb(184, 184, 62);
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    position: absolute;
+    top: 290px;
+}
+.PracticaAbsoulute__4{
+    background: rgb(184, 184, 62);
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    position: absolute;
+    top: 290px;
+    left: 290px;
+}
+.PracticaAbsoulute__5{
+    background: rgb(184, 184, 62);
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* *************** */
+/* FIXED */
+/* *************** */
+
+.fixed a{
+    font-size: 30px;
+    margin: 10px 0px 10px 40px;
+}
+
+
+/* *************** */
+/* STICKY */
+/* *************** */
+
+.sticky a{
+    font-size: 30px;
+    margin: 30px 0px 10px 40px;
+}
+
+/* *************** */
+/* OVERFLOW */
+/* *************** */
+.overflow{
+    margin-left: 30px;
+}
+.overflow__1{
+    background: rgb(99, 70, 228);
+    display: inline-block;
+    width: 150px;
+    height: 140px;
+}
+.overflow__2{
+    background: rgb(99, 70, 228);
+    display: inline-block;
+    width: 150px;
+    height: 140px;
+    margin-left: 40px;
+    position: relative;
+    top: -110px;
+    overflow: auto;
+}
+.overflow__3{
+    background: rgb(99, 70, 228);
+    display: inline-block;
+    width: 150px;
+    height: 140px;
+    margin-left: 40px;
+    position: relative;
+    top: -110px;
+    overflow: hidden;
+}
+.overflow__4{
+    background: grey;
+    display: inline-block;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    overflow: hidden;
+}
+.overflow__4 img{
+    position: relative;
+    top: 120px;
+    left: 130px;
+    transition: all 1.4s;
+}
+.overflow__4 img:hover{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* ************************* */
+/* SEGUNDA PAGINA CURSO CSS */
+/* ************************* */
+.transferenciaPaginaSecundaria{
+    margin: 40px 0px 40px 350px;
+}
+.transferenciaPaginaSecundaria a{
+    font-size: 40px;
+}

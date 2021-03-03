@@ -1,0 +1,511 @@
+body{
+    background: radial-gradient(circle, #fff, #bbb);
+}
+h2{
+    color: red;
+}
+.separador{
+    color: green;
+    margin: 4px;
+}
+.DemostracionCodigoCSS{
+    color: rgb(55, 23, 195);
+    font-size: 25px;
+}
+
+/* ***************** */
+/* GRID AREA*/
+/* **************** */
+.Grid-area{
+    font-size: 35px;
+    margin: 40px;
+}
+
+
+/* ***************** */
+/* RESPONSIVE DESIGN*/
+/* **************** */
+.Responsive-Design{
+    background: #286;
+    margin: 50px 0;
+    text-align: center;
+}
+
+/* ADENTRO DE CADA RESOLUCION ESPECIFICA SE PUEDEN HACER TODOS LOS CAMBIOS QUE QUERAMOS */
+/* EL "display: none;"  AQUI ES MUY UTIL PARA OCULTAR APARTADOS Y MOSTRAR OTROS*/
+@media screen and (max-width: 400px){
+    .Responsive-Design{
+        background: rgb(223, 92, 136);
+    }   
+    .Responsive-Design::after{
+        content: "MENOS DE 400PX";
+    }
+}
+@media screen and (min-width: 400px) AND (max-width: 650px){
+    .Responsive-Design{
+        background: rgb(78, 69, 207);
+    }   
+    .Responsive-Design::after{
+        content: "MAS DE 400PX Y MENOS DE 650PX";
+    }
+}
+@media screen and (min-width: 650px) AND (max-width: 800px){
+    .Responsive-Design{
+        background: rgb(235, 165, 75);
+    }   
+    .Responsive-Design::after{
+        content: "MAS DE 650PX Y MENOS DE 800PX";
+    }
+}
+@media screen and (min-width: 800px){
+    .Responsive-Design{
+        background: rgb(84, 218, 189);
+    }   
+    .Responsive-Design::after{
+        content: "MAS DE 800PX";
+    }
+}
+/* pagina responsive transicion */
+.PaginaReponsiveCOMPLETE{
+    font-size: 35px;
+    margin: 50px;
+
+}
+
+
+/* ***************** */
+/* TRANSITION*/
+/* **************** */
+.Transition-container{
+    height: 250px;
+    background: #86f;
+    padding: 30px;
+}
+
+.Transition-container .caja{
+    background: #025;
+    height: 150px;
+    width: 150px;
+
+    transition-property: background;
+    transition-duration: 2s;
+}
+.Transition-container .caja:hover{
+    background: lightgreen;
+}
+
+.Transition-container .caja__2{
+    background: #025;
+    height: 150px;
+    width: 150px;
+
+    transition-property: background;
+    transition-duration: 2s;
+    transition-delay: 0.8s;
+}
+.Transition-container .caja__2:hover{
+    background: lightgreen;
+}
+
+.Transition-container .caja__3{
+    background: inherit;
+    height: 150px;
+    width: 150px;
+    border: 5px solid #025;
+}
+/* transition-timing-function UNO */
+.Transition-container-timingF{
+    height: 600px;
+    background: #86f;
+    padding: 30px;
+}
+.Transition-container-timingF .caja__4{
+    background: rgb(75, 131, 216);
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+
+    transition-property: background;
+    transition-duration: 1.5s;
+}
+.Transition-container-timingF .caja__4:hover{
+    background:rgb(172, 96, 24);
+}
+.Transition-container-timingF .caja__4:first-child{
+    transition-timing-function: linear;
+}
+.Transition-container-timingF .caja__4:nth-child(2){
+    transition-timing-function: ease;
+}
+.Transition-container-timingF .caja__4:nth-child(3){
+    transition-timing-function: ease-in;
+}
+.Transition-container-timingF .caja__4:nth-child(4){
+    transition-timing-function: ease-out;
+}
+.Transition-container-timingF .caja__4:nth-child(5){
+    transition-timing-function: ease-in-out;
+}
+/* transition-timing-function DOS */
+.Transition-container-timingF-2{
+    display: inline-block;
+    height: 600px;
+    background: #86f;
+    padding: 30px;
+    margin: 60px 0;
+    width: 900px;
+}
+.Transition-container-timingF-2 .caja__5{
+    background: rgb(75, 131, 216);
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    left: 0;
+
+    transition-property: left, background;
+    transition-duration: 2s, 2s;
+}
+.Transition-container-timingF-2:hover > .caja__5{
+    left: 80%;
+    background:rgb(172, 96, 24);
+}
+.Transition-container-timingF-2 .caja__5:first-child{
+    transition-timing-function: linear;
+}
+.Transition-container-timingF-2 .caja__5:nth-child(2){
+    transition-timing-function: ease;
+}
+.Transition-container-timingF-2 .caja__5:nth-child(3){
+    transition-timing-function: ease-in;
+}
+.Transition-container-timingF-2 .caja__5:nth-child(4){
+    transition-timing-function: ease-out;
+}
+.Transition-container-timingF-2 .caja__5:nth-child(5){
+    transition-timing-function: ease-in-out;
+}
+
+
+
+/* ***************** */
+/* ANIMACIONES */
+/* **************** */
+.animacionContainer{
+    background: rgb(97, 68, 116);
+    height: 200px;
+}
+.animacionContainer .caja{
+    background: #025;
+    width: 130px;
+    height: 130px;
+    margin: 10px 15px;
+    position: relative;
+    top: 19px;
+
+    animation-name: NombreTransicion;
+    animation-duration: 3.3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes NombreTransicion{
+    0%{
+        left: 15%;
+        background: #025;
+    }
+    50%{
+        background: rgb(168, 87, 62);
+        border-radius: 50%;
+    }
+    100%{
+        left: 70%;
+        background: rgb(32, 104, 32);
+    }
+}
+
+
+/* ***************** */
+/* CUBIC-BEZIER */
+/* **************** */
+.CubicBezier{
+    background: rgb(97, 68, 116);
+    height: 200px;
+}
+.CubicBezier .caja{
+    background: #025;
+    width: 130px;
+    height: 130px;
+    margin: 10px 15px;
+    position: relative;
+    top: 19px;
+
+    animation-name: NombreTransicion;
+    animation-duration: 3.3s;
+    animation-timing-function: cubic-bezier(.83,-0.41,.01,1.72);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes NombreTransicion{
+    0%{
+        left: 15%;
+        background: #025;
+    }
+    50%{
+        background: rgb(168, 87, 62);
+        border-radius: 50%;
+    }
+    100%{
+        left: 70%;
+        background: rgb(32, 104, 32);
+    }
+}
+
+
+
+
+/* ***************** */
+/* TRANSFORM */
+/* **************** */
+.Transform{
+    background: #286;
+    display: inline-block;
+    height: 230px;
+    width: 720px;
+    position: relative;
+}
+
+.Transform-caja{
+    background: rgb(46, 103, 189);
+    height: 100px;
+    width: 200px;
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.Transform-caja__2{
+    background: rgb(46, 103, 189);
+    height: 100px;
+    width: 200px;
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translateX(0);
+    transition: transform 1s;
+}
+.contenedor2:hover > .Transform-caja__2{
+    transform: translateX(500px);
+}
+.Transform-caja__3{
+    background: rgb(46, 103, 189);
+    height: 100px;
+    width: 200px;
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translateY(0);
+    transition: transform 1s;
+}
+.contenedor3:hover > .Transform-caja__3{
+    transform: translateY(-52px);
+}
+.Transform-caja__4{
+    background: rgb(46, 103, 189);
+    height: 100px;
+    width: 200px;
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(0, 0);
+    transition: transform 1s;
+}
+.contenedor4:hover > .Transform-caja__4{
+    transform: translate(450px, -100px);
+}
+.Transform-caja__5{
+    background: rgb(46, 103, 189);
+    height: 100px;
+    width: 200px;
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: scale(1);
+    transition: transform 1s;
+}
+.contenedor5:hover > .Transform-caja__5{
+    transform: scale(1.9);
+}
+.Transform-caja__6{
+    background: rgb(46, 103, 189);
+    height: 100px;
+    width: 200px;
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    transform: scaleX(1);
+    transition: transform 1s;
+}
+.contenedor5:hover > .Transform-caja__6{
+    transform: scaleX(1.9);
+}
+.Transform-caja__7{
+    background: rgb(46, 103, 189);
+    height: 100px;
+    width: 200px;
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    transform: scaleY(1);
+    transition: transform 1s;
+}
+.contenedor5:hover > .Transform-caja__7{
+    transform: scaleY(1.9);
+}
+.Transform-caja__8{
+    background: rgb(46, 103, 189);
+    height: 100px;
+    width: 200px;
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transition: transform 1s;
+}
+.contenedor6:hover > .Transform-caja__8{
+    transform: scaleY(1.4) scaleX(3.4) translate(300px, -300px);
+}
+
+
+/* ***************** */
+/* CLIP-PATH */
+/* **************** */
+.clipPath-Generator{
+    margin: 40px;
+    font-size: 30px;
+}
+.ClipPath{
+    display: inline-block;
+    margin: 40px;
+}
+
+.ClipPath-caja{
+    background: #86f;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.ClipPath-caja__2{
+    background: #86f;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(33% 45%, 83% 8%, 65% 51%, 48% 66%, 81% 100%, 19% 100%, 0% 70%, 0% 30%);
+}
+
+
+/* ***************** */
+/* BACKGROUND */
+/* **************** */
+.background{
+    background: linear-gradient(to left, rgb(213, 109, 109), rgb(182, 171, 89));
+    width: 400px;
+    height: 600px;
+    margin: 80px;
+    overflow: auto;
+}
+.background .imagen{
+    background-image: url(https://www.hazunaweb.com/imagenes/prueba.jpg);
+    background-size: 60%;
+    width: 400px;
+    height: 200px;
+    background-attachment: fixed;
+}
+
+
+/* ***************** */
+/* FILTER */
+/* **************** */
+.filter2{
+    filter: blur(10px);
+}
+.filter3{
+    filter: brightness(0.5);
+}
+.filter4{
+    filter: brightness(1.5);
+}
+.filter5{
+    filter: contrast(0.5)
+}
+.filter6{
+    filter: contrast(1.5);
+}
+.filter8{
+    margin-left: 40px;
+    filter:drop-shadow(10px 10px 5px rgb(49, 49, 49))
+}
+.filter9{
+    filter: opacity(0.2);
+    transform: translateY(30px);
+}
+
+
+/* ***************** */
+/* PRACTICA CON FILTER */
+/* **************** */
+.PracticaFilter{
+    filter: contrast(30);
+
+    background: #fff;
+}
+.PracticaFilter .caja{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: 40px;
+    border-radius: 50%;
+    
+    filter: blur(20px);
+}
+.PracticaFilter .caja:first-child{
+    animation: transladar 1.95s alternate infinite;
+}
+
+@keyframes transladar{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(160px);
+    }
+}
+
+
+/* ***************** */
+/* OTRAS PROPIEDADES CHIDAS */
+/* **************** */
+.PropiedadesChidas{
+    background: rgb(206, 116, 116);
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+}
+.PropiedadesChidas h4{
+    letter-spacing: 30px;
+}
+.PropiedadesChidas2{
+    background: rgb(206, 116, 116);
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+    user-select: none;
+}

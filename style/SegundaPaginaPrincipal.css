@@ -1,0 +1,586 @@
+body{
+    background: radial-gradient(circle, #fff, #bbb);
+}
+h2{
+    color: red;
+}
+.separador{
+    color: green;
+    margin: 4px;
+}
+
+
+/* ****** */
+/* FLOAT */
+/* ***** */
+.float{
+    margin: 50px;
+}
+.float__1{
+    display: inline-block;
+    width: 550px;
+    height: 540px;
+    border: 4px solid red;
+    background: grey;
+    padding: 20px;
+}
+.float img{
+    float: right;
+}
+.float__2{
+    display: inline-block;
+    width: 550px;
+    height: 540px;
+    border: 4px solid red;
+    background: grey;
+    padding: 20px;
+}
+.float__2 img{
+    float: left;
+}
+
+
+/* **************** */
+/* PSEUDO-ELEMENTOS */
+/* **************** */
+.FirstLine{
+    display: inline-block;
+    margin: 30px;
+}
+.FirstLine p::first-line{
+    background: grey;
+    font-size: 2em;
+}
+.FirstLetter{
+    display: inline-block;
+    margin: 30px;
+}
+.FirstLetter p::first-letter{
+    background: grey;
+    font-size: 2em;
+}
+.placeholder{
+    margin: 30px;
+    display: inline-block;
+    background: grey;
+    width: 500px;
+    height: 100px;
+    padding: 30px;
+}
+.placeholder input{
+    padding: 6px;
+    width: 100%;
+}
+.placeholder input::placeholder{
+    color: red;
+    font-family: cursive;
+}
+.selection{
+    display: inline-block;
+    margin: 30px;
+}
+.selection p::selection{
+    background:yellow;
+    color: red;
+}
+.BeforeYAfter{
+    display: inline-block;
+    background: rgb(202, 198, 198);
+    margin: 30px;
+    width: 800px;
+    height: 100px;
+    padding: 40px;
+}
+.BeforeYAfter p::before{
+    content: "ESTO ES AGREGADO CON BEFORE ";
+    color: rgb(185, 18, 121);
+    background-color: rgb(238, 182, 134);
+}
+.BeforeYAfter p::after{
+    content: "ESTO ES AGREGADO CON AFTER ";
+    color: rgb(0, 26, 112);
+    background: springgreen;
+}
+
+
+/* **************** */
+/* PSEUDO-CLASES */
+/* **************** */
+.hover{
+    background: rgb(98, 98, 206);
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    padding: 30px;
+
+    transition: background 1s, padding 1s, height 0.3s, width 1s;
+}
+.hover p{
+    color: rgb(33, 61, 16);
+    font-weight: 50px;
+}
+.hover:hover{
+    background: rgb(72, 72, 148);
+    width: 300px;
+    height: 300px;
+    padding: 80px 100px;
+}
+.linkYVisited{
+    margin: 30px;
+}
+.linkYVisited__1:link{
+    color: rgb(0, 255, 55);
+}
+.linkYVisited__2:visited{
+    color: red;
+}
+.active{
+    width: 250px;
+    height: 250px;
+    background: rgb(63, 161, 38);
+    margin: 25px;
+    padding: 40px;
+    transition: width 1.3s, background 1.3s;
+}
+.active:active{
+    background: blue;
+    width: 350px;
+}
+.focus__1{
+    background: white;
+    margin: 20px 50px ;
+    padding: 7px;
+    transition: padding .5s;
+}
+.focus__2{
+    background: white;
+    margin: 20px 50px;
+    padding: 7px;
+    transition: padding .5s;
+}
+.focus__1:focus{
+    background: rgb(185, 182, 182);
+    padding: 16px;
+}
+.focus__2:focus{
+    background: rgb(185, 182, 182);
+    padding: 16px;
+}
+
+
+/* **************** */
+/* OBJECT-FIT */
+/* **************** */
+.contain{
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+}
+.contain img{
+    border: 4px solid blue;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.cover{
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+}
+.cover img{
+    border: 4px solid blue;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.none{
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+}
+.none img{
+    border: 4px solid blue;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+}
+.objectPosition{
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+}
+.objectPosition img{
+    border: 4px solid blue;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+/* **************** */
+/* CURSOR */
+/* **************** */
+.pointer{
+    background: salmon;
+    border: 3px solid blue;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    padding: 100px 60px ;
+    text-align: center;
+    margin: 35px;
+    cursor: pointer;
+}
+.rowResize{
+    background: salmon;
+    border: 3px solid blue;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    padding: 100px 60px ;
+    text-align: center;
+    margin: 35px;
+    cursor: row-resize;
+}
+.progress{
+    background: salmon;
+    border: 3px solid blue;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    padding: 100px 60px ;
+    text-align: center;
+    margin: 35px;
+    cursor: progress;
+}
+.listaCursores{
+    font-size: 30px;
+    margin: 40px;
+}
+
+
+
+/* **************** */
+/* MENU RESPONSIVE */
+/* **************** */
+.menuResponsive{
+    margin: 35px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+
+/* **************** */
+/* FLEXBOX */
+/* **************** */
+.flexBox__imagen{
+    margin: 20px;
+}
+.propiedadesFlexBox{
+    color: rgb(96, 89, 156);
+}
+
+/* ejemplo */
+.flexBox__1{
+    display: flex;
+    background: rgba(171, 228, 184, 0.691);
+}
+.flexBox__item-1{
+    background-color: rgba(60, 112, 160, 0.548);
+    margin: 20px;
+    padding: 14px;
+}
+
+/* general de cajas para ejemplos */
+.flexBox__item-propiedades{
+    background-color: #248;
+    margin: 7px;
+    height: 80px;
+    width: 80px;
+}
+.flexBox__item-propiedadesCaja1{
+    background-color: rgb(233, 200, 16);
+    margin: 7px;
+    height: 80px;
+    width: 80px;
+}
+.flexBox__item-propiedadesCajaMedio{
+    background-color: rgb(172, 97, 97);
+    margin: 7px;
+    height: 80px;
+    width: 80px;
+}
+.flexBox__item-propiedadesCajaFinal{
+    background-color: rgb(39, 85, 21);
+    margin: 7px;
+    height: 80px;
+    width: 80px;
+}
+
+
+/* PROPIEDADES PARA CONTENEDORES FLEXBOX */
+
+.flexBox__2{
+    display: flex;
+    flex-direction: row;
+    background: rgba(171, 228, 184, 0.691);
+}
+.flexBox__3{
+    display: flex;
+    flex-direction: row-reverse;
+    background: rgba(171, 228, 184, 0.691);
+}
+.flexBox__4{
+    display: flex;
+    flex-direction: column;
+    background: rgba(171, 228, 184, 0.691);
+}
+.flexBox__5{
+    display: flex;
+    flex-direction: column-reverse;
+    background: rgba(171, 228, 184, 0.691);
+}
+.flexBox__6{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexBox__7{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.flexBox__8{
+    display: flex;
+    justify-content: center;
+    background: rgba(171, 228, 184, 0.691);
+}
+.flexBox__9{
+    display: flex;
+    justify-content: space-around;
+}
+.flexBox__10{
+    display: flex;
+    justify-content: space-between;
+}
+.flexBox__11{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flexBox__12{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 228, 184, 0.691);
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flexBox__13{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 228, 184, 0.691);
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.flexBox__14{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 228, 184, 0.691);
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.flexBox__15{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 228, 184, 0.691);
+    flex-wrap: wrap;
+    align-content: center;
+}
+.flexBox__16{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 228, 184, 0.691);
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-content: baseline;
+}
+
+/* PROPIEDADES PARA ITEMS DE UN FLEXBOX OSEA LOS FLEX-ITEMS */
+
+
+
+.flexBox__17{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 228, 184, 0.691);
+    align-content: flex-start;
+}
+.flexBox__17 .flexBox__item-propiedadesCajaFinal{
+    align-self: center;
+}
+.flexBox__17 .flexBox__item-propiedadesCaja1{
+    align-self: flex-end;
+}
+.flexBox__17 .flexBox__item-propiedadesCajaMedio{
+    align-self: flex-end;
+}
+.flexBox__18{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 228, 184, 0.691);
+}
+.flexBox__18 .flexBox__item-propiedadesCaja1{
+   margin-top: auto;
+   margin-right: auto;
+}
+.flexBox__18 .flexBox__item-propiedadesCajaMedio{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+.flexBox__18 .flexBox__item-propiedadesCajaFinal{
+    margin-top: auto;
+}
+.flexBox__19{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 228, 184, 0.691);
+    flex-wrap: wrap;
+}
+.flexBox__19 .flexBox__item-propiedadesCaja1{
+   flex-grow: 1;
+   min-width: 250px;
+}
+.flexBox__19 .flexBox__item-propiedadesCajaMedio{
+    flex-grow: 1;
+    min-width: 250px;
+}
+.flexBox__19 .flexBox__item-propiedadesCajaFinal{
+    flex-grow: 1;
+    min-width: 250px;
+}
+.flexBox__20{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 228, 184, 0.691);
+    flex-wrap: wrap;
+}
+.flexBox__20 .flexBox__item-propiedadesCajaMedio{
+   flex-grow: 1;
+   min-width: 250px;
+}
+.flexBox__21{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 228, 184, 0.691);
+    flex-wrap: wrap;
+}
+.flexBox__21 .flexBox__item-propiedadesCaja1{
+   flex-grow: 2;
+   min-width: 250px;
+}
+.flexBox__21 .flexBox__item-propiedadesCajaFinal{
+    flex-grow: 1;
+    min-width: 250px;
+}
+.flexBox__22{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 228, 184, 0.691);
+    flex-wrap: wrap;
+}menuResponsive
+.flexBox__22 .flexBox__item-propiedadesCaja1{
+   flex-grow: 6;
+   min-width: 250px;
+}
+.flexBox__22 .flexBox__item-propiedadesCajaMedio{
+    flex-grow: 3;
+    min-width: 250px;
+}
+.flexBox__22 .flexBox__item-propiedadesCajaFinal{
+    flex-grow: 4;
+    min-width: 250px;
+}
+.flexBox__23{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 238, 184, 0.691);
+}
+.flexBox__23 .flexBox__item-propiedadesCaja1{
+   margin: 0;
+   flex-grow: 1;
+   width: 300px;
+   flex-shrink: 2;
+}
+.flexBox__23 .flexBox__item-propiedadesCajaMedio{
+    margin: 0;
+    width: 300px;
+    flex-grow: 1;
+}
+.flexBox__23 .flexBox__item-propiedadesCajaFinal{
+    margin: 0;
+    width: 300px;
+    flex-grow: 1;
+}
+.flexBox__24{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 248, 184, 0.691);
+}
+.flexBox__24 .flexBox__item-propiedadesCaja1{
+   margin: 0;
+   flex: 1 2 300px;
+   order: 2;
+}
+.flexBox__24 .flexBox__item-propiedadesCajaMedio{
+    flex: 1 0 300px;
+    margin: 0;
+    order: 3;
+}
+.flexBox__24 .flexBox__item-propiedadesCajaFinal{
+    flex: 1 0 300px;
+    margin: 0;
+    order: 1;
+}
+.flexBox__25{
+    display: flex;
+    height: 380px;
+    background: rgba(171, 258, 184, 0.691);
+    flex-direction: column;
+}
+.flexBox__25 .flexBox__item-propiedadesCaja1{
+   margin: 0;
+   order: 2;
+}
+.flexBox__25 .flexBox__item-propiedadesCajaMedio{
+    margin: 0;
+    order: 3;
+}
+.flexBox__25 .flexBox__item-propiedadesCajaFinal{
+    margin: 0;
+    order: 1;
+}
+
+
+
+/* **************** */
+/* FORMULARIO CON FLEX */
+/* **************** */
+.FormularioConFlex{
+    margin: 35px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+/* **************** */
+/* TRANFERENCIA A TERCER PAGINA PRINCIPAL */
+/* **************** */
+.TransferenciaTercerPaginaPrincipal{
+    margin: 35px 25vw;
+    font-size: 50px;
+    padding: 10px;
+}
+
+
+

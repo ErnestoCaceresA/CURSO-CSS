@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURSO PAGINA UNO</title>
+    <link rel="stylesheet" href="style/paginaPrincipal.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- NORMALIZE .CSS (se puede de las dos formas)-->
+    <!--<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">-->
+    <link rel="stylesheet" href="style/normalize.css">
+</head>
+<body>
+
+    <div style="background: linear-gradient(to left, rgb(213, 109, 109), rgb(182, 171, 89));; height: 80px">
+        <h2 style="color: blue;">COMO SIGO APRENDIENDO? </h2>
+        <a href="https://www.w3schools.com/css/default.asp" style="margin-left: 50px; font-size: 25px;">TODAS LAS PROPIEDADES Y DOCUMENTACION W3SCHOOL.COM</a>
+    </div>
+
+    <h1>PRIMER PAGINA DE CURSO CSS</h1>
+
+
+
+    <!-- ************************ -->
+    <!-- Selectores y Especifidad -->
+    <!-- ************************ -->
+    <div>
+        <p class="separador">******************************************************************************</p>
+        <h2>Selectores y Especifidad</h2>
+        <p>Ver video es pura teoria</p>
+        <p>ESPECIFIDAD JERARQUIA DEPENDIENDO DE EL SELECTOR:</p>
+        <img src="imagenes/Especifidad jerarquia.jpg" alt="Especifidad" width="160 px">
+        <p class="separador">******************************************************************************</p>
+    </div>
+
+    
+    <!-- *************** -->
+    <!-- METODOLOGIS BEN -->
+    <!-- ************** --> 
+    <br>
+    <div>
+        <p class="separador">******************************************************************************</p>
+        <h2>Metodologia BEN</h2>
+        <p>Ver video es pura teoria tambien</p>
+        <img src="imagenes/Metodologia BEN.jpg" alt="Metodologia BEN" width="380px">
+        <p class="separador">******************************************************************************</p>
+        
+    </div>
+
+    
+
+    <!-- *********-->
+    <!-- UNIDADES -->
+    <!-- ******** -->
+    <br>
+    <div>
+        <p class="separador">******************************************************************************</p>
+        <h2>Unidades</h2>
+        <p>Hay unidades <b>fijas: </b>  <br> ( <b>px,cm,mm</b> ) <br> y hay unidades <b>relativas</b> [para responsive design] : <br> (<b>em : </b> 1em(vale 16px a menos que tenga caja contenedora) es igual al valor que le asignesmos a la caja conteendora) <br> ( <b>vw , vh :</b> e; vw es para el ancho y tomo como 100vw todo el ancho de la pantalla, vh es para la altura e igual se toma como 100vh la altura total del dispositivo o 50vh la mitad de la altura)
+        </p>
+        <p class="separador">******************************************************************************</p>
+    </div>
+
+    
+
+    <!-- ******************** -->
+    <!-- PROPIEDADES DE TEXTO -->
+    <!-- ******************** -->
+    <br>
+    <div>
+        <p class="separador">******************************************************************************</p>
+        <h2>PROPIEDADES DE TEXTO</h2>
+        <h3>en google fonts se pueden buscar tipos de letras muy cool (link en head y font en css</h3>
+        <div class="Texto">
+            <h4 class="Texto__1">Font size  relative</h4>
+            <h4 class="Texto__2">Font family</h4>
+            <h4 class="Texto__3">Google fonts</h4>
+            <h4 class="Texto__4">font weight</h4>
+        </div>
+        <p class="separador">******************************************************************************</p>
+    </div>
+
+    
+    <!-- ********* -->
+    <!-- NORMALIZE -->
+    <!-- ********* -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>Normalize</h2>
+    <p>Buscar en google normalize .css y pegar la ur con link en head o descargarlo con guardar como y  guardamos el archivo .css y despues con link lo vinculamos aqui</p>
+    <p>NORMALIZE.CSS makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.</p>
+    <p>reinicia todo lo que esta en predeterminado por el navegador como el margin y el padding y pues nos lo deja completamente limpio para trabajar ahora bien </p>
+    <p class="separador">******************************************************************************</p>
+
+    
+
+    <!-- ****** -->
+    <!-- CAJAS -->
+    <!-- ****** -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>CAJAS</h2>
+    <p>EXISTEN ELEMENTOS EN <b>BLOQUE</b> Y ELEMENTOS EN <b>LINEA</b></p>
+    <p> <b>LOS ELEMENTO EN BLOQUE</b> son aquellos que ocupan todo el largo de la pantalla osea que no se puede poner uno y en seguida a la derecha otro sino que pasa automaticamente para abajo porque oupan todo un bloque</p>
+    
+    <h4 class="Cajas__3">BLOQUE</h4>
+
+    <p><b>LOS ELEMENTOS EN LINEA</b> estos ocupan unicamente el espacio del contenido, no todo el largo de la pantalla, estos dependiendo la extension de su contenido sera su caja mas grande o mas pequena, y estos si se puede poner uno a la derecha del otro</p>
+
+    <b class="Cajas__4">EN LINEA</b>
+
+    <p><br> <b>ejemplos etiquetas EN BLOQUE:  </b> h,p,div</p>
+    <p> <b>ejemplos etiquetas EN LINEA:  </b> b</p>
+
+    <p><br>Hay una forma de cambiar esto y es usando en la etiqueta que queramos modificar en css el <b>"'display: block; | display: inline;"</b></p> <br>
+    <div class="Cajas">
+        <h4 class="Cajas__1">H4-inlineUno</h4>
+        <h4 class="Cajas__1">H4-inlineDos</h4>
+        
+        <br> <br>
+
+        <b class="Cajas__2">b-block1</b>
+        <b class="Cajas__2">b-block2</b>
+    </div>
+
+    <br>
+    <p>LOS ELEMENTOS EN LINEA Y BLOQUE TIENEN PROPIEDADES <br>
+    a  los elementos <b>en linea</b> no se les puede dar "height" ni "width"<br>
+    a los elementos <b>en bloque</b> si se les puede dar "height" y "width"<br>
+    </p>
+
+    <p class="separador">******************************************************************************</p>
+
+
+    
+    <!-- ************************ -->
+    <!-- PROPIEDADES DE CAJAS -->
+    <!-- ************************ -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>PROPIEDADES DE CAJAS</h2>
+    <br>
+    <p>H3</p>
+    <br>
+    <div class="PropiedadesCajas">
+        <h3 class="PropiedadesCajas__1">background-color</h3>
+        <h3 class="PropiedadesCajas__2">background-color CON display: inline-block</h3>
+        <br>
+        <p> <b> padding, weigth y heigth:</b> tamano y forma de la caja <b> <br> margin:</b> distanccia entre cajas</p> <br>
+        <h3 class="PropiedadesCajas__3">Padding manual</h3>
+        <h3 class="PropiedadesCajas__4">Padding general</h3>
+        <h3 class="PropiedadesCajas__5">Padding: ejeY ejeX</h3>
+        <h3 class="PropiedadesCajas__6">Padding: arriba derecha abajo izquierda</h3>
+        <h3 class="PropiedadesCajas__7">Heigth y Width con border box(para resalar que hablamos del ancho y alto TOTAL de la caja) y center <br> <br> ES MEJOR USAR EL MARGIN: AUTO; para centra de todos lados</h3>
+        <br>
+        <h3 class="PropiedadesCajas__8">Margin (distancia entre cajas)</h3>
+        <h3 class="PropiedadesCajas__9">Margin ejeY ejeX IGUAL TODO</h3> 
+        <h3 class="PropiedadesCajas__10">border-radius</h3> 
+        <h3 class="PropiedadesCajas__11">border-radius</h3> 
+        <h3 class="PropiedadesCajas__12">border</h3> 
+        <h3 class="PropiedadesCajas__13">border style</h3>
+        <h3 class="PropiedadesCajas__14">border style hay: dashed, double, groove, inset, outset, ridge</h3>
+        <h3 class="PropiedadesCajas__15">box-shadow: ejeX | ejeY | tamano de desenfoque | borde | color</h3>
+        <h3 class="PropiedadesCajas__16">box-shadow</h3>
+        <h3 class="PropiedadesCajas__17">box-shadow</h3>
+        <h3 class="PropiedadesCajas__18">text-shadow: ejeX | ejeY | tamano de desenfoque | color , copiar lo mismo separado de "," para duplicar intensidad igual con box shadow ( ESTE TODO MINIMO Y SIN BORDE)</h3>
+        <h3 class="PropiedadesCajas__19">transform: rotate(45deg)</h3>
+        <h3 class="PropiedadesCajas__20">outline(a diferencia del border este no afecta las dimensiones de la caja y por ende tampoco a otras cajas, no se aumenta ni reduce solo <b>se ve</b> )</h3>
+</h3>
+
+    </div>
+    <p class="separador">******************************************************************************</p>
+
+
+    <!-- ********* -->
+    <!-- BOX MODEL -->
+    <!-- ********* -->
+    <p class="separador">******************************************************************************</p>
+    <h2>BOX-MODEL</h2>
+    <img src="imagenes/box-model.jpg" alt="Box model" width="500px">
+    <h4>content: contenido de la caja, <br>  padding: distancia del contenido dentro de la caja,  <br>  border: borde de la caja,   <br>  margin: distancia entre cajas</h4>
+    <img src="imagenes/Box-model__1.png" alt="boxmodel1" width="420px">
+    <img src="imagenes/Box-model__2.png" alt="boxmodel2 " width="350px">
+    <img src="imagenes/Box-model__3.png" alt="boxmodel3 "  width="420px">
+    <p>  <br> <b>CONTENIDO = width, heigth</b>  <br> <b>PADDING = padding</b>  <br> <b>BORDER = border</b>  <br> <b>MARGIN = margin</b> </p>
+    <p class="separador">******************************************************************************</p>
+
+
+    <!-- ********* -->
+    <!-- POSITION -->
+    <!-- ********* -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>POSITION</h2> <br>
+
+    <!-- relative -->
+    <br>---------------<br>
+    <h4>RELATIVE:</h4>
+    <br>--------------- <br>
+    <br>
+    <p style="background-color: cadetblue;"> <b> SE QUEDA UN ESPACIO RESERVADO (que existe)PARA CADA CAJA <br> </b> </p>
+    <br>
+    <div class="relative">
+        <p> <b>Propiedades: TOP | LEFT |RIGTH | BOTTOM Y Z-INDEX<br> (Predominan top y left de jararquia)</b></p>
+        <div class="relative__1">margin: auto;</div>
+        <div class="relative__2">ABSOLUTE</div>
+        <div class="relative__3">margin: auto;</div>
+    </div>
+
+    <div class="Zindex">
+        <p> Z-INDEX LA CAJA CON UN VALIR <br> MAYOR DE Z INDEX SE PONDRA <br> POR ENCIMA (Por defecto empieza en 0)</p>
+        <div class="Zindex__1">Z-index: 1</div>
+        <div class="Zindex__2">Z-index: 2</div>
+        <div class="Zindex__3">Z-index: 1</div>
+        <div class="Zindex__4">Z-index: 2</div>
+    </div>
+
+    <div class="Zindex__Padre">
+        PADRE
+        <div class="Zindex__Hijo">HIJO</div>
+        <b>ESTA ES LA UNICA FORMA DE PONER AL PADRE ENCIMA DEL HIJO (hijo: Z-index: 1  Padre: no definido)<br> <br> TAMBIEN CHECAR EN INSPECCIONAR LA DIFERENCIA ENTRE "PADDING" Y "WIDTH Y HEIGTH"</b>
+    </div>
+
+    <!-- absolute -->
+    <br>---------------- <br>
+    <h4>ABSOLUTE:</h4>
+    <br>---------------- <br>
+    <br>
+    <p style="background-color: cadetblue;"> <b> NO HAY ESPACIO RESERVADO PARA CADA CAJA (no existe) <br> </b> </p>
+    <br>
+    <p> <b> En este caso sucede lo mismo que en el relative pero cambian 3 cosas</b></p>
+    <br>
+    <p> <b>1.- </b> no se queda un espacio reservado para la caja COMO SE VE AQUI SE LE DA EL ABSOLUTE a la caja de en meidoY COMO NO EXISTE EL ESPACIO DE LA CAJA DE EN MEDIO LA DE ABAJO TOMA SU LUGAR PORQUE NO EXISTE ESE ESPACIO ( A EXCEPCION DEL BR SALTO DE LINEA QUE SE LE DIO EN HTML POR ESO QUEDA NO COMPLETAMENTE ENCIMA )</p>
+    <br>
+    <p> <b>2.-</b> EL PUNTO DE REFERENCIA O PARTIDA PARA EL TOP, LEFT, DOWN, RIGTH AHORA NO ES DE DONDE SE ENCUENTRA COMO SUCEDIA EN ABOSULTE, EN ESTE CASO VA A PARTIR DE SU CAJA CONTENEDORA (si no se le agregan las propiedades dichas la caja se queda en su lugar original pero sin espacio reservado)</p>
+    <br>
+    <p> <b>3.- </b> LA CAJA SE AJUSTA EN AUTOMATICO AL CONTENIDO AUNQUE SEA UN ELEMENTO EN BLOQUE </p>
+    <div class="absolute">
+        <div class="absolute__1">margin: auto;</div> <br>
+        <div class="absolute__2">RELATIVE</div> <br>
+        <div class="absolute__3">margin: auto;</div> <br>
+    </div>
+
+    <div class="absolute2">
+        <div class="absolute2__1">ELEMENTO BLOQUE SIN ABOSULTE</div>
+        <div class="absolute2__2">ELEMENTO BLOQUE CON ABOSULTE</div>
+    </div>
+
+    <br>
+    <br>--------------------------------------------------- <br>
+    <h3>PRACTICA CON ABSOLUTE :  ( <b>FAVORITO PARA USAR</b> )</h3>
+    <br>--------------------------------------------------- <br>
+    <br> <br>
+    <h3>para que se tome como referencia (en los top y left y eso) la caja contenedora y no la pantalla completa de la pagina se tiene que posicionar la CAJA CONTENEDORA CON UN POSITION: RELATIVE</h3>
+
+    <div class="PracticaAbsoulute">
+        <div class="PracticaAbsoulute__1">CAJA 1</div>
+        <div class="PracticaAbsoulute__2">CAJA 2</div>
+        <div class="PracticaAbsoulute__3">CAJA 3</div>
+        <div class="PracticaAbsoulute__4">CAJA 4</div>
+        <div class="PracticaAbsoulute__5">CAJA 5</div>
+    </div>
+
+    <br>
+    <br>------------- <br>
+    <h3>FIXED</h3>
+    <br>------------- <br>
+    <br> <br>
+    <div class="fixed">
+        <a href="paginas/pagina1.html">position: fixed</a>
+    </div>
+
+    <br>
+    <br>------------- <br>
+    <h3>STICKY</h3>
+    <br>------------- <br>
+    <br> <br>
+    <div class="sticky">
+        <a href="paginas/pagina2.html">position: sticky</a>
+    </div>
+    <p class="separador">******************************************************************************</p>
+
+
+    <!-- ********* -->
+    <!-- DISPLAY -->
+    <!-- ********* -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>DISPLAY</h2>
+    <br>
+    <p>INLINE-BLOCK  -  se ponen como inline pero en esta si se puede modificar la resolucion osea el width y heigth(COSA QUE EN INLINE NO SE PUEDE PORQUE ES MAS PARA TEXTOS)</p>
+    <p class="separador">******************************************************************************</p>
+
+
+    <!-- ********* -->
+    <!-- OVERFLOW -->
+    <!-- ********* -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>OVERFLOW</h2>
+    <br>
+    
+    <div class="overflow">
+        <div class="overflow__1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit aut incidunt minus laborum, cupiditate quo <b style="background: brown;">SIN OVERFLOW</b> distinctio quod cumque ea asperiores hic reprehenderit amet sint saepe necessitatibus blanditiis inventore officiis! Consectetur? </div>
+        <div class="overflow__2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui repudiandae nam veritatis odio <b style="background: brown;">CON OVERFLOW AUTO</b>eos unde quasi mollitia minus! Iure, tempora. Dolor praesentium iste in veniam cumque, aliquam culpa nostrum! </div>
+        <div class="overflow__3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam qui repudiandae nams <b style="background: brown;">CON OVERFLOW HIDDEN</b>eos unde quasi mollitia minus! Iure, tempora. Dolor praesentium iste in veniam cumque, aliquam culpa nostrum! </div>
+        
+        <br> <br>
+        <h3>AVANCE DE LO QUE SE PODRIA HACER CON EL OVERFLOW HIDDEN MAS ADELANTE Y OTRAS COSAS QUE AUN A ESTE PUNTO NO SE VEN</h3>
+
+        <div class="overflow__4">
+            <img src="https://st.depositphotos.com/1053653/2491/i/600/depositphotos_24917717-stock-photo-logo-company-design-isea-logo.jpg" alt="Prueba">
+        </div>
+    </div>
+
+    <p class="separador">******************************************************************************</p>
+
+
+    <!-- ************************************************ -->
+    <!-- DIRECCION A CONTINUACION EN PAGINA PRINCIPAL DOS -->
+    <!-- ************************************************ -->
+    <br> <br>
+    <p class="separador">******************************************************************************</p>
+    <div class="transferenciaPaginaSecundaria">
+
+        <a href="SegundaPaginaPrincipal.html">SEGUNDA PAGINA DE CURSO CSS</a>
+        
+    </div>
+</body>
+</html>

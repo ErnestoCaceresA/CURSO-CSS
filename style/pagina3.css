@@ -1,0 +1,115 @@
+/* *************************************************************************************************************** */
+/* CUNADO TRABAJAMOS CON TIPOS MENUS QUE OCUPAN TODO EL ANCHO DE LA PANTALLA O EL ALTO SE TIENE QUE TRABAJAR CON "%"
+O CON "vw" y "vh" 
+NO CON "px" PARA QUE SIN IMPORTAR LA RESOLUCION ABARQUE EL 100% DE EL ANCHO O ALTO
+
+LA PSEUDO CLASE :HOVER EN VERSION MOVIL FUNCIONA CON LOS CLICK */
+/* *************************************************************************************************************** */
+
+
+
+.nav__responsive-ul{
+     display: none; /* para desaparecer el menu responsive porque solo se mostrara mas adelante en la version responsive */
+}
+
+
+
+
+/* nav normal version escritorio */
+.nav{
+    background-color: #69e;
+}
+.nav__li{
+    display: inline-block;
+    padding: 8px;
+    color: #fff;
+}
+.nav__li:hover > a{  /* este hover con el signo de > lo que significa es que cuando el cursor pase encime de nav__li se modificara el elemento "a" dentro de ese */
+    color: #bbb;
+}
+.nav__li:hover{ 
+    color: #bbb;
+}
+.nav__li a{
+    color: #fff;
+    text-decoration: none;   /* para quitar la linea que subraya el vinculo por defecto */
+}
+.nav__li i{  /* iconos */
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+
+
+
+
+/* ESTO ES LO PRINCIPAL DEL RESPONSIVE ESTA FUNCION LO QUE HACE ES QUE VA A CAMBIAR LAS PROPIEDADES QUE PONGAMOS
+DENTRO DE LAS LLAVES SIEMPRE Y CUANDO LAS RESOLUCION DEL WIDTH SEA MENOR AL VALOR DADO QUE EN ESTE CASO DE DE 500px 
+Y ESTA RESOLUCION LO MEDIMOS CUANDO ACHICAMOS LA PAGINA CON INSPECCIONAR EN EL NAVEGADOR Y APARTIR DE ESA RESOLUCION TODO
+SE EMPAZABA A DISTORCIONAR */
+@media only screen and (max-width: 500px){
+    
+    .nav__ul{           /* **************************************************************************************/
+        display: none; /* !!! desaparecemos por completo el nav normal para ahora mostrar el nav responsive  !!!*/
+    }                   /* **************************************************************************************/
+
+    /* nav responsive version mobil */
+    .nav{
+        height: 37px;
+        width: 100%;
+    }
+    .nav__responsive-ul{/* ****************************************** */
+        display: block; /*  !!! mostramos el nav responsive ahora !!!*/
+        position: absolute; /* **************************************/
+        width: 100%;
+        margin-top: 37px;
+        padding-top: 27px;
+
+        height: 37px;
+    }
+    .nav__li-container{
+        position: relative;
+        /* *****************************************************************************************************************************************/
+        top: -1000px; /* ocultamos por completo todos los li del menu responsivo para que no sea parte de la pagina hasta que presione el boton para mostrarlo */
+        /* *****************************************************************************************************************************************/
+        height: calc(100vh - 64px);  /* funcion que nos permite hacer operaciones para poner la medida en este caso siver mucho porque trabajamos con unidades diferentes */
+        background-color: #9bf;
+
+        transition: all 1s; /* transicion de la animacion al hacer hover */
+        z-index: 1; /* para que el menu no se despliegue por completo por arriba de todo y que el .nav__responsive-button-container se muestre por encima*/
+
+    }
+    .nav__responsive-li{
+        width: 100%;
+        padding: 9px 20px;
+    }
+    .nav__responsive-li i{ /* iconos */
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color: #016;
+    }
+    .nav__responsive-li a{ /* vinculo */
+        color: #016;
+        text-decoration: none;
+    }
+    .nav__responsive-button-container{
+        position: absolute;
+        width: 100%;
+        font-size: 25px;
+        background-color: #69c;
+        margin-top: -64px;
+        z-index: 100;
+    }
+    .nav__responsive-button{
+        padding: 6px 20px;
+        text-align: right;
+        width: 100%;
+    }
+
+    .nav__responsive-ul:hover > .nav__li-container{
+        top: -27px;
+    }
+}

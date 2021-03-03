@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercer Pagina curso CSS</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="style/normalize.css">
+    <!-- estilos -->
+    <link rel="stylesheet" href="style/TercerPaginaPrincipal.css">
+</head>
+<body>
+
+    <div style="background: linear-gradient(to left, rgb(213, 109, 109), rgb(182, 171, 89));; height: 80px">
+        <h2 style="color: blue;">COMO SIGO APRENDIENDO? </h2>
+        <a href="https://www.w3schools.com/css/default.asp" style="margin-left: 50px; font-size: 25px;">TODAS LAS PROPIEDADES Y DOCUMENTACION W3SCHOOL.COM</a>
+    </div>
+
+    <h1>TERCER PAGINA</h1>
+    <a href="SegundaPaginaPrincipal.html">VOLVER</a>
+
+
+    <!-- ****************************** -->
+    <!-- CONCEPTOS BASICOS DE GRID-->
+    <!-- ****************************** -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>CONCEPTOS BASICOS DE GRID</h2>
+    <br>
+    <p>GRID ES UNA PROPIEDADE DE DISPLAY Y SIRVE PARA TRAbAJAR CON GRILLAS EN EL LOYOUT</p>
+    <br> <br>
+
+
+    <br>
+    <br>-------------------------------------------------------------------- <br>
+    <h3> Grid container</h3> <br>
+    <p>Es como flex content, al darle display grid al CONTENEDOR este no cambia sigue siendo un bloque, lo que cambia son los items de adentro</p>
+    <br>-------------------------------------------------------------------- <br>
+    <img src="imagenes/GridContainer.jpg" alt="GridContainer" width="320px">
+
+    <br>
+    <br>-------------------------------------------------------------------- <br>
+    <h3> Grid item</h3> <br>
+    <p>Son todos los elementos que estan dentro del grid (igual solo los hijos directos no nietos)</p>
+    <br>-------------------------------------------------------------------- <br>
+
+    <br>
+    <br>-------------------------------------------------------------------- <br>
+    <h3> Grid cell</h3> <br>
+    <p>son las celdas de el grid</p>
+    <br>-------------------------------------------------------------------- <br>
+
+    <br>
+    <br>-------------------------------------------------------------------- <br>
+    <h3> Grid Tracks (Column y Row)</h3> <br>
+    <p>son por asi decirlo las filas y columnas de un grid, solamente filas y columndas</p>
+    <br>-------------------------------------------------------------------- <br>
+
+    <br>
+    <br>-------------------------------------------------------------------- <br>
+    <h3> Grid Area</h3> <br>
+    <p>las areas las definimos nosotros</p>
+    <br>-------------------------------------------------------------------- <br>
+    <img src="imagenes/GridArea.jpg" alt="GridArea" width="320px">
+
+    <br>
+    <br>-------------------------------------------------------------------- <br>
+    <h3> Grid Line (Column line y Rom Line)</h3> <br>
+    <br>-------------------------------------------------------------------- <br>
+    <img src="imagenes/GridLine.jpg" alt="Gridline" width="520px">
+
+    <p class="separador">******************************************************************************</p>
+
+
+
+    <!-- ****************************** -->
+    <!-- PROPIEDADES DE GRID-->
+    <!-- ****************************** -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>PROPIEDADES DE GRID</h2>
+    <p>background: radial-gradient(circle, #fff, #bbb); <br>
+    para poner un fondo con difuminacion circular, es lo mismo que el lineal-gradient</p>
+    <br>
+
+    <!-- PROPIEDADES PARA CONTENEDORES DE GRID -->
+    <br> <br> <br>
+    <h2>propiedades para poner al CONTENEDOR grid que afectan a los items:</h2>
+    <br> <br>
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> grid-template-rows</h3> <br>
+    <p>Es para decir cuantas filas va a tener el grid</p>
+    <p>SE PONE grid-template-rows: 150px 150px 150px  (OSEA SE PONE LA MEDIDA DEL ALTO DE LA FILA Y SE PONE TANTAS QUIERAS PARA DETERMINAR EL NUMERO DE FILAS)</p>
+    <br>
+    <P>EN ESTE CASO EN EL GRID HAY SOLAMENTE 3 FILAS QUE PROGRAMAMOS <b style="color: darkblue;">(GRID EXPLICITO)</b>, LAS DEMAS ETIQUETAS QUE NO ESTAN PROGRAMADAS PARA EL GRID SE CONSIDERAN <b style="color: darkblue;">(GRID IMPLICITO)</b></P>
+    <br>-------------------------------------------------------------------- <br>
+
+    <br>
+    
+    <div class="Grid">
+        <div class="Grid-Container">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> grid-template-columns</h3> <br>
+    <p>Es para decir cuantas columnas va a tener el grid y juntarlas con LAS FILAS QUE SE HICIERON ARRIBA</p>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: 150px 150px 150px; <br>
+        grid-template-columns: 150px 150px 150px;
+    </p> 
+
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    
+    <div class="Grid">
+        <div class="Grid-Container__2">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> unidad: fr (PARA DINAMICO) unidad: px (PARA ESTATICO)</h3> <br>
+    <p>El "fr" es como como el flex grow pero como unidad, esta reparte el espacio sobrante dependiendo la cantidad que le des ya sea a la rows o al columns Y LA HACE FLEXIBLE ACHICAR O AGRANDAR RESOLUCION</p>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: 150px 150px 150px; <br>
+        grid-template-columns: 150px 1fr 1fr;
+    </p>
+    
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    
+    <div class="Grid">
+        <div class="Grid-Container__3">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> GRID-ROW-GAP y GRID-COLUMN-GAP </h3> <br>
+    <h3>o masa corto GRID-GAP: row column</h3> <br>
+    <p>Es como el margin para especificar el espacio de separacion entre cada grilla ENTRE SI, NO SE SEPARAN LAS ULTIMAS DE LOS BORDER DEL CONTENEDOR</p>
+    <p class="DemostracionCodigoCSS">
+        grid-row-gap: 10px; <br>
+        grid-column-gap: 30px;
+    </p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    
+    <div class="Grid">
+        <div class="Grid-Container__4">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    <!-- PROPIEDADES PARA ITEMS DE GRID -->
+    <br> <br> <br>
+    <h2>propiedades para poner al ITEM grid :</h2>
+    <br> <br>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> GRID-COLUMN: Row line donde quieres que empieze / Row line donde quieres que termine </h3> <br>
+    <p>Este sirve para hacer areas PARA SELECCIONAR EL PRIMER ELEMNTO DE LA CLASE Grid-item SIN DARLE CLASE SE PUEDE USAR <br> <br> .grid-item:first-child PARA SELECCIONAR AL PRIMERO</p>
+    <p class="DemostracionCodigoCSS">
+        grid-column: 1 / 3;
+    </p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    
+    <div class="Grid">
+        <div class="Grid-Container__5">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> GRID-ROW: Column line donde quieres que empieze / Column line donde quieres que termine </h3> <br>
+    <p>lo mismo pero con row line</p>
+    <p class="DemostracionCodigoCSS">
+        grid-row: 1 / 4;
+    </p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    
+    <div class="Grid">
+        <div class="Grid-Container__6">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3>GRID-COLUMN y GRID ROW en DOS O MAS elementos </h3> <br>
+    <p>PERO HAY QUE TENER EN CUENTA QUE SI AGRANDAS UN ELEMENTO DE ROW LINE: 1 / 3 PARA QUE NO DE UN SALTO DE LINEA Y QUIERAS PONER OTRO ELEMENTO A LADO TIENES QUE EMPEZAR DESDE ESE ROW LINE QUE TERMINO EL ANTERIOR ROW LINE: 3 / 5</p>
+    <p class="DemostracionCodigoCSS">
+        .Grid-Container__7{ <br>
+            grid-template-rows: 150px 150px 150px 150px; <br>
+            grid-template-columns: 150px 150px 150px 150px; <br>
+        } <br>
+        .Grid-Container__7 .Grid-item:first-child{ <br>
+            grid-column: 1 / 3; <br>
+            grid-row: 1 / 3; <br>
+            background: red; <br>
+        } <br> 
+        .Grid-Container__7 .Grid-item:nth-child(2){ <br>
+            grid-column: 3 / 5; <br>
+            background: green; <br>
+        } <br>
+    </p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    
+    <div class="Grid">
+        <div class="Grid-Container__7">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3>GRID-COLUMN o GRID-ROW con SPAN </h3> <br>
+    <p>sirve para no tener que estar contando los row line y eso y mejor "grid-row: 1 / span 3" (empieza en la colum line 1 y avanza 3 bloques)</p>
+    <p class="DemostracionCodigoCSS">
+        grid-column: 1 / span 3; <br>
+        grid-row: 1 / span 3;
+    </p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    
+    <div class="Grid">
+        <div class="Grid-Container__8">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <!--HACK EXTRA -->
+    <br> <br> <br>
+    <h2>HACK EXTRA:</h2>
+    <br> <br>
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3>repeat()</p> <br>
+    <p>Esto lo que hace es repetir alguna propiedas ciertas veces (cantidad de repeticion, lo que queremos repetir) para simplificar codigo</p>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: repeat(6,150px); <br>
+        grid-template-columns: 1fr repeat(3,150px) 1fr;
+    </p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    
+    <div class="Grid">
+        <div class="Grid-Container__9">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+            <div class="Grid-item">10</div>
+        </div>
+    </div>
+
+
+    <p class="separador">******************************************************************************</p>
+
+
+
+    <!-- ****************************** -->
+    <!-- GRID IMPLICITO Y GRID EXPLICITO-->
+    <!-- ****************************** -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>GRID IMPLICITO Y GRID EXPLICITO</h2>
+    <br> <br>
+    <p>
+        Es como el grid item que sobra al poner la cantidad de filas y columnas en css ese se considera IMPLICITO
+    </p>
+    <p>3 COLUMNAS Y 3 FILAS EN GRID</p>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: repeat(3,150px); <br>
+        grid-template-columns: repeat(2,150px) 1fr; <br>
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__10">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+            <div class="Grid-item" style="color: darkred;">10 GRID IMPLICITO</div>
+            <div class="Grid-item" style="color: darkred;">11 GRID IMPLICITO</div>
+        </div>
+    </div>
+
+    <!-- 3 nuevas propiedades para grid implicito -->
+    <br> <br> <br>
+    <h2>3 nuevas propiedades para grid implicito</h2>
+    <br> <br>
+    
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> GRID-AUTO-ROWS </h3> <br>
+    <p>Es lo mismo que grid-template-rows pero esta AFECTA A TODOS LOS GRIDS IMPLICITOS OSEA LOS SOBRANTES <br> NO SE NECESITA PONER COMO EN TEMPLATE EL (250px 250px 250px) CON UNA SOLA VEZ BASTA PORQUE ESTE SOLO MODIFICA LA ALTURA DE LOS GRID IMPLICITOS NO ESTAMOS CREANDOLOS O DICIENDO CUANTOS HABRA</p>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: repeat(3,150px); <br>
+        grid-template-columns: repeat(3,150px); <br>
+        grid-auto-rows: 230px; <br>
+    </p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    
+    <p>3 COLUMNAS Y 3 FILAS EN GRID</p>
+    <div class="Grid">
+        <div class="Grid-Container__11">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+            <div class="Grid-item" style="color: darkred;">10 GRID IMPLICITO</div>
+            <div class="Grid-item" style="color: darkred;">11 GRID IMPLICITO</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> GRID-AUTO-FLOW: COLUMN </h3> <br>
+    <p>Este sirve para cambiar el por defecto que tienen los implicitos que en automaatico se hacen una nueva fila, este sirve para volver esos grid implicitos COLUMNAS</p>
+    <p class="DemostracionCodigoCSS">
+        grid-auto-flow: column;
+    </p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    
+    <p>3 COLUMNAS Y 3 FILAS EN GRID</p>
+    <div class="Grid">
+        <div class="Grid-Container__12">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+            <div class="Grid-item" style="color: darkred;">10 GRID IMPLICITO</div>
+            <div class="Grid-item" style="color: darkred;">11 GRID IMPLICITO</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> GRID-AUTO-COLUMNS </h3> <br>
+    <p>Este sirve para modificar la anchura de los grid IMPLICITOS que con el flow de arriba ahora estan en columna</p>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: repeat(3,150px); <br>
+        grid-template-columns: repeat(3,150px); <br>
+        grid-auto-flow: column; <br>
+        grid-auto-columns: 250px; <br>
+    </p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    
+    <p>3 COLUMNAS Y 3 FILAS EN GRID</p>
+    <div class="Grid">
+        <div class="Grid-Container__13">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+            <div class="Grid-item" style="color: darkred;">10 GRID IMPLICITO</div>
+            <div class="Grid-item" style="color: darkred;">11 GRID IMPLICITO</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> GRID-AUTO-FLOW: DENSE </h3> <br>
+    <p>Este sirve para rellenar los huecos que pueden quedar en el grid por usar los grid area, este perdo rellena los huecos con los grid implicitos</p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    
+    <p>3 COLUMNAS Y 3 FILAS EN GRID</p>
+    <p>grid SIN dense</p>
+    <div class="Grid">
+        <div class="Grid-Container__14">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+            <div class="Grid-item" style="color: darkred;">10 GRID IMPLICITO</div>
+            <div class="Grid-item" style="color: darkred;">11 GRID IMPLICITO</div>
+        </div>
+    </div>
+
+    <p>3 COLUMNAS Y 3 FILAS EN GRID</p>
+    <p>grid CON dense</p>
+    <p class="DemostracionCodigoCSS">
+        .Grid-Container__15{ <br>
+            grid-template-rows: repeat(3,150px); <br>
+            grid-template-columns: repeat(3,150px); <br>
+            grid-auto-rows: 200px; <br>
+            grid-auto-flow: dense; <br>
+        } <br>
+        .Grid-Container__15 .Grid-item:first-child{ <br>
+            grid-column: 1 /  3; <br>
+            grid-row: 1 /  3; <br>
+        } <br>
+        .Grid-Container__15 .Grid-item:nth-child(3){ <br>
+            grid-column: 5 /  7; <br>
+        } <br>
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__15">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+            <div class="Grid-item" style="color: darkred;">10 GRID IMPLICITO</div>
+            <div class="Grid-item" style="color: darkred;">11 GRID IMPLICITO</div>
+        </div>
+    </div>
+    <p class="separador">******************************************************************************</p>
+
+
+
+    <!-- ****************************** -->
+    <!-- GRID DINAMICO-->
+    <!-- ****************************** -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>GRID DINAMICO</h2>
+    <br> <br>
+    
+    <br> <br> <br>
+    <h2>propiedades para poner dentro del repeat()</h2>
+    <br> <br>
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> MINMAX() </h3> <br>
+    <p>Este sirve para poner la resolucion minima y maxima de las grillas al crearlas con grid-template-rows y grid-template-columns</p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: repeat(3,150px); <br>
+        grid-template-columns: repeat(3, minmax(120px,200px)); <br>
+    </p>
+    <br>
+    <p>ESTIRAR Y ENCOJER RESOLUCION, <br> <b>EL TAMAÑO DE ANCHO (grid-auto-columns) DE LAS GRILLAS ES MINIMO 120px Y MAXIMO 200px</b></p>
+    <div class="Grid">
+        <div class="Grid-Container__16">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> MIN-CONTENT </h3> <br>
+    <p>Este sirve para decirle que el tamano de la grilla sera igual a lo minimo que se pueda reducir el texto (la palabra mas grande)</p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: repeat(3,150px); <br>
+        grid-template-columns: 150px repeat(2, min-content); <br>
+    </p>
+
+    <div class="Grid">
+        <div class="Grid-Container__17">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit.u</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> MAX-CONTENT </h3> <br>
+    <p>Este sirve para decirle que el tamano de la grilla sera igual a lo maximo del contenido osea de el maximo renglon de texto</p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: repeat(3,150px); <br>
+        grid-template-columns: 150px repeat(2, max-content); <br>
+    </p>
+
+    <div class="Grid">
+        <div class="Grid-Container__18">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem  <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio suscipit, <br>
+                </p>
+            </div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">
+                Lorem ipsum, dolor sit amet consectetur adipisicing
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, </p>
+            </div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    
+    <br>-------------------------------------------------------------------- <br>
+    <h3> LOS TRES JUNTOS </h3> <br>
+    <p>poner un minmax y dentro como minimo poner el min-content y como maximo el max-content (AUNQUE EL MAX-CONTENT CASI NO SE USA)</p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: repeat(3,150px); <br>
+        grid-template-columns: 150px repeat(2, max-content); <br>
+    </p>
+
+    <p><b>ACHICAR RESOLUCION</b></p>
+
+    <div class="Grid">
+        <div class="Grid-Container__19">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                <p>
+                    grid-template-rows: repeat(3,150px); <br>
+                    grid-template-columns: 150px repeat(2, minmax(min-content, max-content)); <br>
+                </p>
+            </div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">
+                Lorem ipsum, dolor sit amet consectetur adipisicing
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, </p>
+            </div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> LO MAS COMUNMENTE HECHO (MAXIMO FLEXIBLES CON UNIDAD FR Y UN MINIMO ESPECIFICO) </h3> <br>
+    <p>Esto es lo que se hace mas comunmente</p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: repeat(3,150px); <br>
+        grid-template-columns:repeat(3, minmax(120px, 1fr)); <br>
+    </p>
+    <br>
+    <p><b>ENCOGER, TINE 3 COLUMNAS Y 3 FILAS PERO LAS COLUMNAS TIENEN UN MINIMO DE 120px <br> Y UN MAXIMO DE 1FR OSEA QUE SE DIVIDE EL ESPACIO SOBRANTE ENTRE 3 PARA QUE SEA FLEXIBLE Y TENGA UN MINIMO</b></p>
+    <div class="Grid">
+        <div class="Grid-Container__20">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> AUTO-FILL </h3> <br>
+    <p> <p style="color: red;">ES COMO EL WRAP DE FLEXBOX</p> una forma de hacer que CRESCA DINAMICAMENTE Esto lo que hace es que va agregando o quitando columnas y/o filas cada que se modifica las resoluciones <br> <br> se pone dentro del REPEAT EN VEZ DE PONER LA CANTIDAD EN LA QUE SE VA A REPETIR LAS MEDIDAS DE LAS COLUMNA O FILA SE LE PONE AUTO-FILL <br> <br> <b>BASICAMENTE LO QUE DICE AQUI ES, SI HAY ESPACIO EN ESTE CASO EN EL ANCHO DE LA PANTALLA, PARA QUE ENTRE UNA CAJA (QUE CUMPLA CON LAS PROPIEDADES MINMAX) DADAS DE ABAJO LA METE, SI NO HAY ESPACIO (QUE CUMPLA CON LAS PROPIEDADES DADAS DE MINMAX) ENTONCES HECHA PARA ABAJO LAS CAJAS </b></p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: repeat(3,150px); <br>
+        grid-template-columns:repeat(auto-fill, minmax(120px, 1fr)); <br>
+    </p>
+    <br> <br>
+    <p><b>ENCOGER RESOLUCION</b></p>
+    <div class="Grid">
+        <div class="Grid-Container__21">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+            <div class="Grid-item">10</div>
+            <div class="Grid-item">11</div>
+            <div class="Grid-item">12</div>
+        </div>
+    </div>
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> AUTO-FIT </h3> <br>
+    <p> En vez de ir agregando cajas las va alargando (Esta sirve si solamente tenemos pocos elementos en el grid) </p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+
+    <p class="separador">******************************************************************************</p>
+
+
+
+
+    <!-- ****************************** -->
+    <!-- ALINEACION Y CONTROL DE FLUJO EN GRID-->
+    <!-- ****************************** -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>ALINEACION Y CONTROL DE FLUJO EN GRID</h2>
+    <br> <br>
+    
+    <h3>DIFERENCIA CON FLEX:</h3>
+    <br>
+    <p>
+        1.- LA ALINEACION ES DENTRO DE CADA CELDA Y NO ALINEACION TOTAL DEL FLEX CONTAINER <br>
+        (CADA CELDA SERIA UN FLEX-CONTAINER)
+    </p>
+
+    <!-- alineacion de los items -->
+    <br> <br> <br>
+    <h2>alineacion de ITEMS:</h2>
+    <br> <br>
+
+    <br> 
+    <h2>propiedades para CONTENEDORES</h2>
+    <br> <br>
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> JUSTIFY-ITEMS (HORIZONTALMENTE) <br> :center, start, end</h3> <br>
+    <p>ES igual que el align content en flex, este ALINEA los grid horizontalmente</p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: repeat(3,100px); <br>
+        grid-template-columns:repeat(3, minmax(50px, 1fr)); <br>
+        justify-items: start; <br>
+    </p>
+    <br>
+    <h3>NORMAL SIN JUSTIFY-ITEMS</h3>
+    <div class="Grid">
+        <div class="Grid-Container__22">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    <h3>START</h3>
+    <div class="Grid">
+        <div class="Grid-Container__23">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    <h3>CENTER</h3>
+    <div class="Grid">
+        <div class="Grid-Container__24">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> ALIGN-ITEMS (VERTICALMENTE) <br> :center, start, end</h3> <br>
+    <p>ES igual que el align content en flex, este ALINEA los grid VERTICALMENTE</p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    <p class="DemostracionCodigoCSS">
+        grid-template-rows: repeat(3,100px); <br>
+        grid-template-columns:repeat(3, minmax(50px, 1fr)); <br>
+    </p>
+    <br>
+
+    <h3>LOS DOS EN START</h3>
+    <p class="DemostracionCodigoCSS">
+        justify-items: start; <br>
+        align-items: start;
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__25">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    <h3>LOS DOS EN END</h3>
+    <p class="DemostracionCodigoCSS">
+        justify-items: end; <br>
+        align-items: end;
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__26">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    <h3>HORIZONTAL EN CENTER Y VERTICALMENTE EN END</h3>
+    <p class="DemostracionCodigoCSS">
+        justify-items: center; <br>
+        align-items: end; <br>
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__27">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    <h3>LO MISMO PERO CON PADDING EN ITEMS</h3>
+    <p class="DemostracionCodigoCSS">
+        Grid-Container__28{ <br>
+            justify-items: end; <br>
+            align-items: start; <br>
+        } <br>
+        .Grid-Container__28 .Grid-item{ <br>
+            padding: 20px 30px; <br>
+        } <br>
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__28">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <!-- alineacion de contenido general (todas grillas juntas) -->
+    <br> <br> <br>
+    <h2>alineacion de FILAS Y COLUMNAS:</h2>
+    <br> <br>
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> JUSTIFY-CONTENT (HORIZONTALMENTE) <br> :center, start, end</h3> <br>
+    <p>ESigual que el anterior solamente que este es para TODAS LAS FILAS Y COLUMNAS</p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    <p class="DemostracionCodigoCSS">
+        height: 430px; <br>
+        grid-template-rows: repeat(3,100px); <br>
+        grid-template-columns:repeat(3, minmax(50px, 100px)); <br>
+    </p>
+    <br>
+    <h3>NORMAL SIN NADA</h3>
+    <div class="Grid">
+        <div class="Grid-Container__29">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    <h3>CENTER</h3>
+    <p class="DemostracionCodigoCSS">
+        justify-content: center;
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__30">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    <h3>END</h3>
+    <p class="DemostracionCodigoCSS">
+        justify-content: end;
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__31">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> ALIGN-CONTENT (VERTICALMENTE) <br> :center, start, end</h3> <br>
+    <p>IGUAL QUE CON EL ITEM PERO PARA FILAS Y COLUMNAS</p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+
+    <h3>HORIZONTAL CENTER Y VERTICALMENTE END</h3>
+    <p class="DemostracionCodigoCSS">
+        justify-content: center; <br>
+        align-content: end; <br>
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__32">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    
+    <br> <br> <br>
+    <h2>LOS DOS JUNTOS</h2>
+    <br> <br>
+
+    <h3>ITEMS Y CONTENT</h3>
+    <p class="DemostracionCodigoCSS">
+        .Grid-Container__33{ <br>
+            display: grid; <br>
+            height: 430px; <br>
+            grid-template-rows: repeat(3,100px); <br>
+            grid-template-columns:repeat(3, minmax(50px, 100px)); <br> <br>
+            justify-content: end; <br>
+            align-content: end; <br>
+            justify-items: end; <br>
+            align-items: start; <br>
+        } <br>
+        .Grid-Container__33 .Grid-item{ <br>
+            padding: 30px; <br>
+        } <br>
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__33">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    <br> <br> <br>
+    <h2>Estas dos de CONTENT se le agregan otras 3 propiedades que son: <br>
+        space-around <br>
+        space-between <br>
+        space-evenly <br>
+        LAS MISMAS IGUAL QUE SE USAN EN FLEX
+    </h2>
+    <br> <br>
+
+    <h3>SPACE-BETWEEN</h3>
+    <p class="DemostracionCodigoCSS">
+        justify-content: space-between; <br>
+        align-content: end; <br>
+        justify-items: end; <br>
+        align-items: start; <br>
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__34">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    <h3>SPACE-BETWEEN EN DOS</h3>
+    <p class="DemostracionCodigoCSS">
+        justify-content: space-between; <br>
+        align-content: space-between; <br>
+        justify-items: end; <br>
+        align-items: start; <br>
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__35">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    <h3>Y ASI CON LAS OTRAS DOS (ESTAN EN APARTADO DE FLEX DEMOSTRACIONES)</h3>
+
+
+    <br> <br> <br>
+    <h2>ALINEACION DE CADA ITEM INDIVIDUAL(propiedades para ITEMS)</h2>
+    <br> <br>
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> JUSTIFY-SELF(HORIZONTAL) Y ALIGN-SELF (VERTICALMENTE) <br> :center, start, end</h3> <br>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+
+    <h3>ALINEACION INDIVIDUAL</h3>
+    <p class="DemostracionCodigoCSS">
+        .Grid-Container__36{ <br>
+            display: grid; <br>
+            height: 430px; <br>
+            grid-template-rows: repeat(3,1fr); <br>
+            grid-template-columns:repeat(3, minmax(50px, 1fr)); <br>
+            justify-content: center; <br>
+            align-content: center; <br>
+            justify-items: center; <br>
+            align-items: center; <br>
+        } <br>
+        .Grid-Container__36 .Grid-item{ <br>
+            padding: 30px; <br>
+        } <br>
+        .Grid-Container__36 .Grid-item:first-child{ <br>
+            align-self: start; <br>
+            justify-self: start; <br>
+        } <br>
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__36">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+
+    <h3>ALINEACION INDIVIDUAL PRACTICA</h3>
+    <p class="DemostracionCodigoCSS">
+        .Grid-Container__37{ <br>
+            display: grid; <br>
+            height: 430px; <br>
+            grid-template-rows: repeat(3,1fr); <br>
+            grid-template-columns:repeat(3, minmax(50px, 1fr)); <br>
+            justify-content: center; <br>
+            align-content: center; <br>
+            justify-items: center; <br>
+            align-items: center; <br>
+        } <br>
+        .Grid-Container__37 .Grid-item{ <br>
+            padding: 30px; <br>
+        } <br>
+        .Grid-Container__37 .Grid-item:first-child{ <br>
+            align-self: start; <br>
+            justify-self: start; <br>
+        } <br>
+        .Grid-Container__37 .Grid-item:nth-child(5){ <br>
+            justify-self: end; <br>
+        } <br>
+        .Grid-Container__37 .Grid-item:nth-child(6){ <br>
+            justify-self: start; <br>
+        } <br>
+        .Grid-Container__37 .Grid-item:nth-child(4){ <br>
+            align-self: end; <br>
+        } <br>
+        .Grid-Container__37 .Grid-item:nth-child(7){ <br>
+            align-self: start; <br>
+        } <br>
+    </p>
+    <div class="Grid">
+        <div class="Grid-Container__37">
+            <div class="Grid-item">1</div>
+            <div class="Grid-item">2</div>
+            <div class="Grid-item">3</div>
+            <div class="Grid-item">4</div>
+            <div class="Grid-item">5</div>
+            <div class="Grid-item">6</div>
+            <div class="Grid-item">7</div>
+            <div class="Grid-item">8</div>
+            <div class="Grid-item">9</div>
+        </div>
+    </div>
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> PLACE-SELF: align-self justify-self</h3> <br>
+    <p>PRIMERO ALIGN DESPUES JUSTIFY es una acortacion de lo de arriba <br> <br> place-self: end start; <br> <br> USAR MUCHO ESTE ACORTAMIENTO</p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+
+    <br>-------------------------------------------------------------------- <br>
+    <h3> ORDER </h3> <br>
+    <p>ES COMO EL ORDER DEL FLEX Y TMBN COMO EL Z INDEX</p>
+    <br>-------------------------------------------------------------------- <br>
+    <br>
+    <p class="separador">******************************************************************************</p>
+
+
+
+
+    <!-- ****************************** -->
+    <!-- GALERIA CON GRID-->
+    <!-- ****************************** -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>GALERIA CON GRID</h2>
+
+    <div class="GaleriaConGrid">
+        <a href="paginas/pagina5.html">PAGINA 5 - GALERIA CON GRID</a>
+    </div>
+    <br>
+    
+    <p class="separador">******************************************************************************</p>
+
+
+
+    <!-- ****************************** -->
+    <!-- TRANSFERENCIA A CUARTA PAGINA PRINCIPAL-->
+    <!-- ****************************** -->
+    <br>
+    <p class="separador">******************************************************************************</p>
+    <h2>TRANFERENCIA A CUARTA PAGINA PRINCIPAL</h2>
+
+    <div class="TransferenciaCuartaPaginaPrincipal">
+        <a href="UCuartaPaginaPrincipal.html">CUARTA PAGINA DE CURSO CSS</a>
+    </div>
+    <br>
+    
+    <p class="separador">******************************************************************************</p>
+
+</body>
+</html>
